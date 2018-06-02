@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Food Page</title>
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="StyleSheets">
+        
+        <!--STYLESHEET LINK-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="Stylesheets.css">
+        
+        <style>
+            
+        </style>
+        
+        
+    </head>
+    <body>
+        
+        <h1>THE CLAMBAKE REUNION FOOD & ROOMS</h1>
+        <body bgcolor = #C5E5E9>
+            <div class = "credit">
+                </div>
+        <br>
+        <div style="text-align: center">
+        </div>
+        
+            <div class="dropdown">
+                <button onMouseOver="hoverScript()" class="dropbtn">Menu</button>
+                    <div id =myDropDown class="dropdown-content">
+                        <a href = "index.html">HOME</a>
+                        <a href = "Food.html">FOOD & ROOMS</a>
+                        <a href = "About.html">ABOUT</a>
+                    </div>
+            </div>
+            
+             <iframe src="https://docs.google.com/spreadsheets/d/1mNsyXHsyxORenlPlEbMj7GBt0KtRQlhmg7i4EZGZXmY/edit?usp=sharing" height="500" width="450"></iframe>
+            
+             <iframe src="https://docs.google.com/spreadsheets/d/1oWVfItrhFHIMsRxAz2tXxXAWB6IdClfhDE_cW1CakT8/edit#gid=0; headers=false" height="500" width="450" style="position: absolute;"></iframe>
+        
+                    
+                    
+            
+        <script>
+            function hoverScript()
+            {
+                document.getElementById("myDropDown").classList.toggle("show");
+            }
+            
+            window.onmouseover = function(event)
+            {
+                var x = event.clientX;
+                // console.log(x);
+                if(!(x > 0 && x <127))
+                {
+                    if (!event.target.matches('.dropbtn'))
+                    {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for(i = 0; i< dropdowns.length; i++)
+                            {
+                                var openDropdown=dropdowns[i];
+                                if (openDropdown.classList.contains('show'))
+                                    {
+                                        openDropdown.classList.remove('show');
+                                    }
+                            }
+                    }
+                }     
+            }
+        </script>
+        
+    </body>
+    </html>

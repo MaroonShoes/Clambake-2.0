@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="StyleSheets">
+        
+        <!--STYLESHEET LINK-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="Stylesheets.css">
+        
+        
+    </head>
+    <body>
+        
+        <div class="background-image">
+        </div>
+        
+        <div class="content">
+            
+              <h1>THE CLAMBAKE REUNION</h1>
+        <h2 align = "center";>Clambake 2018: September 28th-30th in beautiful <a href="https://www.lakesideohio.com/" target="_blank">Lakeside Ohio.</a></h2>
+        <body>
+        <br>
+        <div style="text-align: center">
+        </div>
+        
+            <div class="dropdown">
+            <button onMouseOver="hoverScript()" class="dropbtn">Menu</button>
+                <div id =myDropDown class="dropdown-content">
+                <a href = "index.html">HOME</a>
+                <a href = "Food.html">FOOD & ROOMS</a>
+                <a href = "About.html">ABOUT</a>
+            </div>
+            
+            </div>
+            
+            
+            <div class = "instagramBox">
+            <a href="https://instawidget.net/v/tag/shiefamilyclambake" id="link-f725dedf88c5d56d85d61336eeef72c48fb3c6135f544957b2b11edd48dcc76d">#shiefamilyclambake</a>
+            <script src="https://instawidget.net/js/instawidget.js?u=f725dedf88c5d56d85d61336eeef72c48fb3c6135f544957b2b11edd48dcc76d&width=500px"></script>
+            </div>
+            
+               
+            <br>
+            <br>
+            <br>
+            <br>
+           
+            
+        <a href="mailto:wablab86@gmail.com">Contact clamissoner (Laurie Bowls)</a>
+        <a href="mailto:edogmy@outlook.com">Contact Webmaster   (Evan Myers)</a>
+         <a href="https://shiefamilyclambake.shutterfly.com">Shutterfly link</a>
+
+
+            
+        </div>
+        
+      
+        <script>
+            
+            function hoverScript()
+            {
+                document.getElementById("myDropDown").classList.toggle("show");
+            }
+            
+            window.onmouseover = function(event)
+            {
+                var x = event.clientX;
+                // console.log(x);
+                if(!(x > 0 && x <127))
+                {
+                    if (!event.target.matches('.dropbtn'))
+                    {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for(i = 0; i< dropdowns.length; i++)
+                            {
+                                var openDropdown=dropdowns[i];
+                                if (openDropdown.classList.contains('show'))
+                                    {
+                                        openDropdown.classList.remove('show');
+                                    }
+                            }
+                    }
+                }
+                
+   
+               
+            }
+
+            
+        
+        </script>
+           
+    </body>
+    </html>
